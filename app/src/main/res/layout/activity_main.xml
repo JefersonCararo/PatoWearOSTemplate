@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/imagem_2026_06_02_204338879">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="58dp"
+        android:layout_height="48dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/contexto" />
 
     <TextView
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Titulo"
+        android:layout_height="22dp"
+        android:layout_marginBottom="20dp"
+        android:text="00:00"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btnPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Play" />
 
-        <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Play"/>
-
-        <Button
-            android:id="@+id/btnStop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Stop"
-            android:layout_marginStart="8dp"/>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="75dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="0dp"
+        android:text="Stop" />
 
 </LinearLayout>
