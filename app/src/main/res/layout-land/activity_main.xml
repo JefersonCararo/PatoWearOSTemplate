@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/imagem_2026_06_02_204338879"
     android:gravity="center"
-    android:orientation="vertical"
-    android:visibility="visible"
-    tools:visibility="visible">
+    android:orientation="vertical">
 
 
     <ImageView
@@ -41,6 +39,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="0dp"
         android:text="Perfil" />
+
 
     <Button
         android:id="@+id/btnStop"

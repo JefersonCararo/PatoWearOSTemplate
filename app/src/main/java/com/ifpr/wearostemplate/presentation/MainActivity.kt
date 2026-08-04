@@ -30,7 +30,8 @@ class MainActivity : ComponentActivity() {
 
         setContentView(R.layout.activity_main)
 
-
+        val distanciaAtualKm = 2.0
+        val tempoAtualSegundos: Long = 2
         val buttonPerfil = findViewById<Button>(R.id.btnPerfil)
         buttonPerfil.setOnClickListener{
             val intent = Intent(baseContext, PerfilActivity::class.java)
@@ -39,6 +40,7 @@ class MainActivity : ComponentActivity() {
 
         val btnStop = findViewById<Button>(R.id.btnStop)
         btnStop.setOnClickListener {
+
             val distanciaKm = distanciaAtualKm
             val tempoSegundos = tempoAtualSegundos
             salvarCorrida(distanciaKm, tempoSegundos)
